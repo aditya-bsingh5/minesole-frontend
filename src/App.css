@@ -4,11 +4,19 @@
   box-sizing: border-box;
 }
 :root {
-  --color-header-bg-color: #131921;
-  --color-header-partition-lines: #3b4149;
-  --color-header-search-button: #febd69;
-  --color-header-bottom-bg-color: #232f3e;
-  --color-footer-bg-color: #232f3e;
+  --color-bg-tone-one: #131921;
+  --color-bg-tone-two: #232f3e;
+
+  --color-partition-lines: #3b4149;
+  --color-partition-lines-2: #ededed;
+
+  --color-button-hover: #febd69;
+
+  --color-banner-header: #bf4800;
+  --color-section-bg: #f5f5f7;
+
+  --color-content-faded: #777777;
+  --color-content-darken: #1c1c1b;
 }
 body {
   font-family: "Rubik", sans-serif;
@@ -36,18 +44,44 @@ a {
   gap: 15px;
 }
 
+.button {
+  background-color: var(--color-bg-tone-two);
+  color: white;
+  font-size: 14px;
+  padding: 13px 33px;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background-color: var(--color-button-hover);
+  border-bottom: #131921;
+}
+
+.card-wrapper {
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 15px;
+}
+
+.section-heading {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
 /*Header Part*/
 .header-top-strip {
-  border-bottom: 1px solid var(--color-header-partition-lines);
-  background-color: var(--color-header-bg-color);
+  border-bottom: 1px solid var(--color-partition-lines);
+  background-color: var(--color-bg-tone-one);
 }
 
 .header-upper {
-  background-color: var(--color-header-bg-color);
+  background-color: var(--color-bg-tone-one);
 }
 
 .header-upper .input-group-text {
-  background-color: var(--color-header-search-button);
+  background-color: var(--color-button-hover);
 }
 
 .header-upper .header-upper-links img {
@@ -56,7 +90,7 @@ a {
 }
 
 .header-bottom {
-  background-color: var(--color-header-bottom-bg-color);
+  background-color: var(--color-bg-tone-two);
 }
 
 .header-bottom .menu-links a,
@@ -74,7 +108,7 @@ a {
 }
 
 .header-bottom .dropdown-menu {
-  background-color: var(--color-header-bg-color);
+  background-color: var(--color-bg-tone-one);
   width: 100%;
   transform: translate3d(0px, 57px, 0px) !important;
 }
@@ -82,12 +116,12 @@ a {
 .header-bottom .dropdown-item {
   padding: 20px;
   margin-bottom: 3px;
-  border-bottom: 1px solid var(--color-header-partition-lines);
+  border-bottom: 1px solid var(--color-partition-lines);
 }
 
 .header-bottom .dropdown-item:hover {
   background-color: transparent;
-  color: var(--color-header-search-button) !important;
+  color: var(--color-button-hover) !important;
 }
 
 /*Header Part Ends Here*/
@@ -95,7 +129,7 @@ a {
 /*Footer Part*/
 
 footer {
-  background-color: var(--color-footer-bg-color);
+  background-color: var(--color-bg-tone-two);
 }
 
 footer:not(:first-child) {
@@ -103,9 +137,217 @@ footer:not(:first-child) {
 }
 
 footer .input-group-text {
-  background-color: var(--color-footer-bg-color);
+  background-color: var(--color-bg-tone-two);
   padding: 8px 17px;
   color: white;
 }
 
 /*Footer Part Ends Here*/
+
+/* Home Page */
+
+/* Home Wrapper 1 */
+.main-banner-content {
+  top: 10%;
+  left: 5%;
+}
+.main-banner-content h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-banner-header);
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.main-banner-content h5 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: -2px;
+  text-transform: none;
+  width: 50%;
+}
+
+.main-banner-content p {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+  color: var(--color-bg-tone-one);
+}
+
+.small-banner-content {
+  top: 20%;
+  left: 7.5%;
+}
+.small-banner-content h4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-banner-header);
+  margin: 0 0 12px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+.small-banner-content h5 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -2px;
+  text-transform: none;
+  width: 75%;
+}
+
+.small-banner-content p {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: var(--color-bg-tone-one);
+}
+
+.small-banner {
+  width: 49%;
+}
+
+/* Home Wrapper 2 */
+.home-wrapper-2 {
+  background-color: var(--color-section-bg);
+}
+
+/* Catergories Section */
+.categories {
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 15px;
+}
+
+.categories > div {
+  width: 25%;
+  padding: 10px;
+}
+
+.categories > div > div {
+  width: 60%;
+}
+
+.categories > div:nth-child(1),
+.categories > div:nth-child(2),
+.categories > div:nth-child(3),
+.categories > div:nth-child(4) {
+  border-bottom: 1px solid var(--color-partition-lines-2);
+}
+.categories > div:nth-child(1),
+.categories > div:nth-child(2),
+.categories > div:nth-child(3) {
+  border-right: 1px solid var(--color-partition-lines-2);
+}
+.categories > div:nth-child(5),
+.categories > div:nth-child(6),
+.categories > div:nth-child(7) {
+  border-right: 1px solid var(--color-partition-lines-2);
+}
+
+/* Home Page Ends Here*/
+
+/* Blog Card Part */
+
+.blog-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.blog-card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blog-content {
+  padding: 15px;
+}
+
+.blog-content p.date {
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: var(--color-content-faded);
+  padding: 0;
+}
+
+.blog-content h5 {
+  font-size: 18px;
+  color: var(--color-bg-tone-one);
+}
+
+.blog-content p.desc {
+  font-size: 13px;
+  line-height: 22px;
+  color: var(--color-content-faded);
+}
+
+/* Blog Crad Part Ends Here*/
+
+/* Product Card */
+
+.product-card {
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-card .product-image {
+  height: 270px;
+}
+
+.product-card .product-image img {
+  object-fit: contain;
+}
+
+.product-card .product-image > img:last-child {
+  display: none;
+}
+
+.product-card:hover .product-image > img:nth-child(1) {
+  display: none;
+}
+
+.product-card:hover .product-image > img:last-child {
+  display: block;
+}
+
+.product-card:hover .action-bar {
+  right: 15px;
+}
+
+.product-card .product-details h6 {
+  color: var(--color-banner-header);
+  font-size: 13px;
+}
+
+.product-card .product-details h4 {
+  color: var(--color-content-darken);
+  font-size: 15px;
+}
+
+.product-card .product-details p {
+  color: var(--color-content-darken);
+  font-size: 16px;
+}
+
+.action-bar {
+  top: 10%;
+  right: -40px;
+  transition: 0.3s;
+}
+
+.wishlish-icon {
+  top: 2%;
+  right: 15px;
+}
+
+/* Product Card Ends Here */
