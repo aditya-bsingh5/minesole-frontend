@@ -198,7 +198,27 @@ const Home = () => {
       <section className="featured-wrappper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="section-heading">Featured Collection</div>
+            <div className="col-12">
+              <h3 className="section-heading">Featured Collection</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+      <section className="popular-wrappper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Our Popular Products</h3>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-2"></div>
+            <div className="col-2"></div>
+
             <ProductCard />
             <ProductCard />
             <ProductCard />
