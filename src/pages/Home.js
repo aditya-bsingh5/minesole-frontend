@@ -134,56 +134,56 @@ const Home = () => {
           <div className="row">
             <div className="col-12">
               <div className="categories d-flex flex-wrap justify-content-between align-items-center">
-                <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex justify-content-evenly align-items-center">
                   <div>
                     <h6>Sandals</h6>
                     <p>10 Items</p>
                   </div>
                   <img src="images/camera.jpg" alt="sandals" />
                 </div>
-                <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex justify-content-evenly align-items-center">
                   <div>
                     <h6>Chapal</h6>
                     <p>10 Items</p>
                   </div>
                   <img src="images/tv.jpg" alt="sandals" />
                 </div>
-                <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex justify-content-evenly align-items-center">
                   <div>
                     <h6>Ballerinas</h6>
                     <p>10 Items</p>
                   </div>
                   <img src="images/headphone.jpg" alt="sandals" />
                 </div>
-                <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex justify-content-evenly align-items-center">
                   <div>
                     <h6>Shoes</h6>
                     <p>10 Items</p>
                   </div>
                   <img src="images/camera.jpg" alt="sandals" />
                 </div>
-                <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex justify-content-evenly align-items-center">
                   <div>
                     <h6>Sandals</h6>
                     <p>10 Items</p>
                   </div>
                   <img src="images/camera.jpg" alt="sandals" />
                 </div>
-                <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex justify-content-evenly align-items-center">
                   <div>
                     <h6>Chapal</h6>
                     <p>10 Items</p>
                   </div>
                   <img src="images/tv.jpg" alt="sandals" />
                 </div>
-                <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex justify-content-evenly align-items-center">
                   <div>
                     <h6>Ballerinas</h6>
                     <p>10 Items</p>
                   </div>
                   <img src="images/headphone.jpg" alt="sandals" />
                 </div>
-                <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex justify-content-evenly align-items-center">
                   <div>
                     <h6>Shoes</h6>
                     <p>10 Items</p>
@@ -229,11 +229,23 @@ const Home = () => {
       <section className="blog-wrappper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="section-heading">Blogs</div>
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+            <div className="col-12">
+              <h3 className="section-heading">Blogs</h3>
+            </div>
+            <div className="row">
+              <div className="col-3">
+                <BlogCard />
+              </div>
+              <div className="col-3">
+                <BlogCard />
+              </div>
+              <div className="col-3">
+                <BlogCard />
+              </div>
+              <div className="col-3">
+                <BlogCard />
+              </div>
+            </div>
           </div>
         </div>
       </section>
