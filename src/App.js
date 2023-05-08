@@ -7,7 +7,10 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Store from "./pages/Store";
 import Blog from "./pages/Blog";
-import CompareProduct from "./pages/CompareProduct";
+import Compare from "./pages/Compare";
+import Wishlist from "./pages/Wishlist";
+import Login from "./pages/Login";
+import Forgot from "./pages/Forgot";
 
 function App() {
   return (
@@ -20,7 +23,10 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="store" element={<Store />} />
             <Route path="blogs" element={<Blog />} />
-            <Route path="compare-product" element={<CompareProduct />} />
+            <Route path="compare" element={<Compare />} />
+            <Route path="wishlist" element={<Wishlist />} />
+            <Route path="login" element={<Login />} />
+            <Route path="forgot-password" element={<Forgot />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -57,6 +57,14 @@ a {
   border-bottom: #131921;
 }
 
+.cross {
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  padding: 3px;
+  cursor: pointer;
+}
+
 .card-wrapper {
   background-color: white;
   box-shadow: 0 0 10px #0000001a;
@@ -520,30 +528,25 @@ footer .input-group-text {
 
 /* Contact Ends Here */
 
-/* Compare Product */
+/* Compare & Wishlist Product */
 
-.compare-product-card {
+.compare-product-card,
+.wishlist-card {
   padding: 20px 15px;
   background-color: white;
   border-radius: 10px;
 }
 
-.compare-product-card .cross {
-  top: 15px;
-  right: 15px;
-  width: 25px;
-  padding: 3px;
-  cursor: pointer;
-}
-
-.compare-product-details h5.title {
+.compare-product-details h5.title,
+.wishlist-card h5.title {
   font-size: 15px;
   line-height: 22px;
   font-weight: 500;
   color: var(--color-content-darken);
 }
 
-.compare-product-details h6.price {
+.compare-product-details h6.price,
+.wishlist-card h6.price {
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
@@ -557,4 +560,52 @@ footer .input-group-text {
   border-top: 1px solid var(--color-section-bg);
 }
 
-/* Compare Product Ends Here */
+/* Compare & Wishlist Product Ends Here */
+
+/* Auth Card */
+
+.auth-card {
+  padding: 20px;
+  background-color: white;
+  width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.auth-card h3 {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-content-faded);
+}
+
+.auth-card .form-control {
+  height: 50px;
+  background-color: var(--color-section-bg);
+  color: var(--color-content-faded);
+  border-color: transparent;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.auth-card a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-content-darken);
+}
+
+.auth-card .signup {
+  background-color: var(--color-button-hover);
+  color: var(--color-bg-tone-one);
+}
+
+.auth-card .signup:hover {
+  background-color: var(--color-bg-tone-one);
+  color: var(--color-button-hover);
+}
+
+.auth-card p {
+  font-size: 13px;
+  color: var(--color-content-faded);
+}
+
+/* Auth Card Ends Here */

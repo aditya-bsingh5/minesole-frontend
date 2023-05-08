@@ -3,7 +3,7 @@ import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import Color from "../components/Color";
 
-const CompareProduct = () => {
+const Compare = () => {
   return (
     <>
       <Meta title="Product Comparison" />
@@ -16,10 +16,14 @@ const CompareProduct = () => {
                 <img
                   src="images/cross.svg"
                   alt="cross"
-                  className="cross position-absolute"
+                  className="cross position-absolute img-fluid"
                 />
                 <div className="product-card-image">
-                  <img src="images/watch.jpg" alt="watch" />
+                  <img
+                    src="images/watch.jpg"
+                    alt="watch"
+                    className="img-fluid w-100"
+                  />
                 </div>
                 <div className="compare-product-details">
                   <h5 className="title">Chapal</h5>
@@ -38,14 +42,20 @@ const CompareProduct = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="col-3">
               <div className="compare-product-card position-relative">
                 <img
                   src="images/cross.svg"
                   alt="cross"
-                  className="cross position-absolute"
+                  className="cross position-absolute img-fluid"
                 />
                 <div className="product-card-image">
-                  <img src="images/watch.jpg" alt="watch" />
+                  <img
+                    src="images/watch.jpg"
+                    alt="watch"
+                    className="img-fluid w-100"
+                  />
                 </div>
                 <div className="compare-product-details">
                   <h5 className="title">Chapal</h5>
@@ -72,4 +82,4 @@ const CompareProduct = () => {
   );
 };
 
-export default CompareProduct;
+export default Compare;
