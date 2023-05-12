@@ -62,19 +62,19 @@ const Footer = () => {
                   sales@minesole.com
                 </a>
                 <div className="social_icons d-flex align-items-center gap-30">
-                  <a href="">
+                  <a href="/">
                     <BsInstagram className="text-white fs-6" />
                   </a>
-                  <a href="">
+                  <a href="/">
                     <BsFacebook className="text-white fs-6" />
                   </a>
-                  <a href="">
+                  <a href="/">
                     <BsPinterest className="text-white fs-6" />
                   </a>
-                  <a href="">
+                  <a href="/">
                     <BsTwitter className="text-white fs-6" />
                   </a>
-                  <a href="">
+                  <a href="/">
                     <BsLinkedin className="text-white fs-6" />
                   </a>
                 </div>
@@ -83,10 +83,18 @@ const Footer = () => {
             <div className="col-3">
               <h4 className="text-white mb-3">Information</h4>
               <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-2 mb-1">Privacy Policy</Link>
-                <Link className="text-white py-2 mb-1">Refund Policy</Link>
-                <Link className="text-white py-2 mb-1">Shipping Policy</Link>
-                <Link className="text-white py-2 mb-1">Terms Of Service</Link>
+                <Link to="/privacy-policy" className="text-white py-2 mb-1">
+                  Privacy Policy
+                </Link>
+                <Link to="/refund-policy" className="text-white py-2 mb-1">
+                  Refund Policy
+                </Link>
+                <Link to="/shipping-policy" className="text-white py-2 mb-1">
+                  Shipping Policy
+                </Link>
+                <Link to="/terms-cond" className="text-white py-2 mb-1">
+                  Terms Of Service
+                </Link>
               </div>
             </div>
             <div className="col-3">

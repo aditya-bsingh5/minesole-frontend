@@ -19,7 +19,7 @@ const BlogCard = () => {
           placeat a assumenda dicta! Quisquam maiores impedit, amet odio nemo
           neque quae vero iste minima, harum officia ad, possimus id.
         </p>
-        <Link to="/" className="button">
+        <Link to="/blog/:id" className="button">
           Read More
         </Link>
       </div>

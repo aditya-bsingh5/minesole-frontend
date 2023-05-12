@@ -301,6 +301,28 @@ footer .input-group-text {
   color: var(--color-content-faded);
 }
 
+.blog-page h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-content-darken);
+}
+
+.blog-page p {
+  color: var(--color-content-faded);
+  font-size: 14px;
+}
+
+.blog-page img {
+  height: 400px;
+  width: fit-content;
+}
+
+.blog-page a {
+  font-size: 18px;
+  color: var(--color-content-faded);
+  margin-top: 20px;
+}
+
 /* Blog Crad Part Ends Here*/
 
 /* Product Card */
@@ -609,3 +631,12 @@ footer .input-group-text {
 }
 
 /* Auth Card Ends Here */
+
+/* Policy Pages */
+
+.policy {
+  background-color: white;
+  padding: 30px;
+}
+
+/* Policy Pages Ends Here */

@@ -6,11 +6,18 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Store from "./pages/Store";
-import Blog from "./pages/Blog";
+import Blogs from "./pages/Blogs";
 import Compare from "./pages/Compare";
 import Wishlist from "./pages/Wishlist";
 import Login from "./pages/Login";
 import Forgot from "./pages/Forgot";
+import Signup from "./pages/Signup";
+import Reset from "./pages/Reset";
+import Blog from "./pages/Blog";
+import RefundPolicy from "./pages/RefundPolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import ShippingPolicy from "./pages/ShippingPolicy";
+import TermsAndCond from "./pages/TermsAndCond";
 
 function App() {
   return (
@@ -22,11 +29,18 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="store" element={<Store />} />
-            <Route path="blogs" element={<Blog />} />
+            <Route path="blogs" element={<Blogs />} />
+            <Route path="blog/:id" element={<Blog />} />
             <Route path="compare" element={<Compare />} />
             <Route path="wishlist" element={<Wishlist />} />
             <Route path="login" element={<Login />} />
             <Route path="forgot-password" element={<Forgot />} />
+            <Route path="signup" element={<Signup />} />
+            <Route path="reset" element={<Reset />} />
+            <Route path="refund-policy" element={<RefundPolicy />} />
+            <Route path="privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="shipping-policy" element={<ShippingPolicy />} />
+            <Route path="terms-cond" element={<TermsAndCond />} />
           </Route>
         </Routes>
       </BrowserRouter>
