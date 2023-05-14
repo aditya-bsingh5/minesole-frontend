@@ -216,9 +216,6 @@ const Home = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-2"></div>
-            <div className="col-2"></div>
-
             <ProductCard />
             <ProductCard />
             <ProductCard />

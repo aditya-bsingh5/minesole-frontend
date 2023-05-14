@@ -640,3 +640,140 @@ footer .input-group-text {
 }
 
 /* Policy Pages Ends Here */
+
+/* Product Page */
+
+.review-inner-wrapper {
+  background-color: white;
+  padding: 30px;
+}
+
+.description-wrapper h4,
+.reviews-wrapper h3 {
+  font-size: 26px;
+  color: var(--color-content-darken);
+  margin-bottom: 10px;
+}
+
+.description-wrapper p {
+  font-size: 14px;
+  color: var(--color-content-faded);
+}
+
+.review-head {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
+.review-head h4 {
+  font-size: 18px;
+  color: var(--color-content-darken);
+}
+
+.review-head p,
+.review-head a {
+  font-size: 14px;
+  color: var(--color-content-faded);
+}
+
+.review-form {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.review-form h4 {
+  font-size: 16px;
+  color: var(--color-content-faded);
+}
+
+.review:nth-of-type(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.reviews p {
+  font-size: 14px;
+  color: var(--color-content-faded);
+}
+
+.main-product-image {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.main-product-image > div {
+  border: 1px solid pink;
+}
+
+.main-product-image img {
+  width: 100% !important;
+  height: 500px !important;
+  object-fit: cover;
+}
+
+.main-product-image .js-image-zoom__zoomed-image {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.other-product-images {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.other-product-images > div {
+  border: 1px solid pink;
+  width: 48%;
+}
+
+.main-product-details {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.main-product-details h3.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-content-darken);
+  margin-bottom: 10px;
+}
+
+.main-product-details p.price {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.main-product-details a.review-btn,
+.t-review {
+  color: var(--color-content-faded);
+  font-size: 13px;
+}
+
+.product-heading {
+  font-size: 15px;
+  color: var(--color-content-darken);
+  margin-bottom: 0px;
+}
+
+.product-data {
+  font-size: 14px;
+  color: var(--color-content-faded);
+  margin-bottom: 0px;
+}
+
+.product-marquee {
+  background-color: white;
+}
+
+.coupon-marquee {
+  color: var(--color-content-faded);
+}
+
+/* Product Page Ends Here */
