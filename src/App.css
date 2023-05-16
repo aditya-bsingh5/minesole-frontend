@@ -714,6 +714,8 @@ footer .input-group-text {
   padding: 10px;
   background-color: white;
   border-radius: 10px;
+  position: absolute;
+  z-index: 1000;
 }
 
 .other-product-images {
@@ -728,7 +730,7 @@ footer .input-group-text {
 }
 
 .main-product-details {
-  padding: 20px;
+  padding: 30px 20px;
   background-color: white;
   border-radius: 10px;
 }
@@ -774,6 +776,23 @@ footer .input-group-text {
 
 .coupon-marquee {
   color: var(--color-content-faded);
+}
+
+.buy-now-btn {
+  background-color: var(--color-button-hover);
+  color: var(--color-bg-tone-one);
+  border: none;
+}
+
+.buy-now-btn:hover {
+  background-color: var(--color-bg-tone-one);
+  color: var(--color-button-hover);
+}
+
+.main-product-details a {
+  font-size: 14px;
+  color: var(--color-content-faded);
+  margin-bottom: 0px;
 }
 
 /* Product Page Ends Here */

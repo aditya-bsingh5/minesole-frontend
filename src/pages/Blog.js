@@ -3,6 +3,7 @@ import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import { Link } from "react-router-dom";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
+import blogImg from "../images/blog-1.jpg";
 
 const Blog = () => {
   return (
@@ -16,11 +17,7 @@ const Blog = () => {
               <div className="blog-page">
                 <h3 className="title pb-4">Rural in Disco</h3>
                 <p className="float-left">
-                  <img
-                    src="/images/blog-1.jpg"
-                    className="img-fluid"
-                    alt="blogimg"
-                  />
+                  <img src={blogImg} className="img-fluid" alt="blogimg" />
                 </p>
                 <p className="mt-4 pt-4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.

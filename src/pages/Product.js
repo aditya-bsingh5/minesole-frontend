@@ -6,6 +6,8 @@ import ReactStars from "react-rating-stars-component";
 import ReactImageZoom from "react-image-zoom";
 import Marquee from "react-fast-marquee";
 import Color from "../components/Color";
+import { TbGitCompare, TbHeartPlus } from "react-icons/tb";
+import { BsTruck, BsShare, BsBalloonHeart } from "react-icons/bs";
 
 const Product = () => {
   const props = {
@@ -18,6 +20,15 @@ const Product = () => {
     img: "https://cdn.fcglcdn.com/brainbees/images/products/zoom/13182798b.jpg",
   };
   const [orderedProduct, setorderedProduct] = useState(true);
+  const copyToClipboard = (text) => {
+    console.log("text", text);
+    var textField = document.createElement("textarea");
+    textField.innerText = text;
+    document.body.appendChild(textField);
+    textField.select();
+    document.execCommand("copy");
+    textField.remove();
+  };
   return (
     <>
       <Meta title="Dynamic Product Name" />
@@ -83,7 +94,7 @@ const Product = () => {
                     Write a Review
                   </a>
                 </div>
-                <div className="specification py-3">
+                <div className="specification border-bottom py-3">
                   <div className="d-flex gap-10 align-items-center my-2">
                     <h3 className="product-heading">Type:</h3>
                     <p className="product-data">Ballerinas</p>
@@ -120,7 +131,7 @@ const Product = () => {
                     <h3 className="product-heading">Color:</h3>
                     <Color />
                   </div>
-                  <div className="d-flex gap-10 flex-row align-items-center mt-2 mb-3">
+                  <div className="d-flex gap-15 flex-row align-items-center mt-2 mb-3">
                     <h3 className="product-heading">Quantity:</h3>
                     <div className="">
                       <input
@@ -129,18 +140,77 @@ const Product = () => {
                         min={1}
                         max={10}
                         className="form-control"
-                        style={{ width: "120px" }}
+                        style={{ width: "100px" }}
                         id=""
                       />
                     </div>
+                    <div className="d-flex align-items-center gap-30 ms-5">
+                      <button className="button border-0" type="submit">
+                        ADD TO CART
+                      </button>
+                      <button to="/signup" className="button buy-now-btn">
+                        BUY NOW
+                      </button>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-15 align-items-center">
+                    <div>
+                      <a href="">
+                        <TbGitCompare className="fs-5 me-2" /> Add To Compare
+                      </a>
+                      <br />
+                      <a href="">
+                        <TbHeartPlus className="fs-5 me-2" />
+                        Add To Wishlist
+                      </a>
+                    </div>
+                    <div></div>
                   </div>
                 </div>
-                <div className="product-marquee">
+                <div className="product-marquee border-bottom">
                   <Marquee className="d-flex">
                     <div className="coupon-marquee">
                       <span>USE COUPON HOLI10 FOR 10% DISCOUNT</span>
                     </div>
                   </Marquee>
+                </div>
+                <div className="specification py-3">
+                  <div className="d-flex gap-10 flex-column my-3">
+                    <h3 className="product-heading">
+                      <BsTruck className="fs-5 me-2" />
+                      Shipping & Returns:
+                    </h3>
+                    <p className="product-data">
+                      Free Shipping on all orders! <br />
+                      Currently working on return policy.
+                    </p>
+                  </div>
+                  <div className="d-flex gap-10 flex-column my-3">
+                    <h3 className="product-heading">
+                      <BsShare className="fs-5 me-2" />
+                      Share Product Link:
+                    </h3>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={() => {
+                        copyToClipboard(
+                          "https://cdn.fcglcdn.com/brainbees/images/products/zoom/13182798b.jpg"
+                        );
+                      }}
+                    >
+                      COPY TO CLIPBOARD
+                    </a>
+                  </div>
+                  <div className="d-flex gap-10 flex-column my-3">
+                    <h3 className="product-heading">
+                      <BsBalloonHeart className="fs-5 me-2" />
+                      Care Instructions
+                    </h3>
+                    <p className="product-data">
+                      Use a soft cloth and drop of mild soap. <br />
+                      Gently polish. Air dry.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

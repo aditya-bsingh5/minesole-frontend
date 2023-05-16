@@ -1,6 +1,11 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
+import prodcompare from "../images/prodcompare.svg";
+import wishlist from "../images/wishlist.svg";
+import user from "../images/user.svg";
+import cart from "../images/cart.svg";
+import menu from "../images/menu.svg";
 
 const Header = () => {
   return (
@@ -9,7 +14,7 @@ const Header = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-6">
-              <p className="text-white mb-0">Free Shipping Over INR 5,000</p>
+              <p className="text-white mb-0">Hello World!</p>
             </div>
             <div className="col-6">
               <p className="text-end text-white mb-0">
@@ -27,7 +32,9 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h2>
-                <Link className="text-white">Minesole</Link>
+                <Link to="/" className="text-white">
+                  Minesole
+                </Link>
               </h2>
             </div>
             <div className="col-5">
@@ -51,7 +58,7 @@ const Header = () => {
                     to="/compare"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src="images/compare.svg" alt="compare"></img>
+                    <img src={prodcompare} alt="compare"></img>
                     <p className="mb-0">
                       Compare <br /> Products
                     </p>
@@ -62,7 +69,7 @@ const Header = () => {
                     to="/wishlist"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src="images/wishlist.svg" alt="wishlist"></img>
+                    <img src={wishlist} alt="wishlist"></img>
                     <p className="mb-0">
                       Favourite <br /> Wishlist
                     </p>
@@ -73,7 +80,7 @@ const Header = () => {
                     to="/login"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src="images/user.svg" alt="login"></img>
+                    <img src={user} alt="login"></img>
                     <p className="mb-0">
                       Login <br /> My Account
                     </p>
@@ -84,7 +91,7 @@ const Header = () => {
                     to="/cart"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src="images/cart.svg" alt="cart"></img>
+                    <img src={cart} alt="cart"></img>
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
                       <p className="mb-0">₹ 5000</p>
@@ -110,7 +117,7 @@ const Header = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img src="images/menu.svg" alt="menu"></img>
+                      <img src={menu} alt="menu"></img>
                       <span className="me-5 d-inline-block">
                         Shop Categories
                       </span>
