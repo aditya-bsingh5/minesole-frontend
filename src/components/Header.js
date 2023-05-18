@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
-import prodcompare from "../images/prodcompare.svg";
+import compare from "../images/compare.svg";
 import wishlist from "../images/wishlist.svg";
 import user from "../images/user.svg";
 import cart from "../images/cart.svg";
@@ -58,7 +58,7 @@ const Header = () => {
                     to="/compare"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src={prodcompare} alt="compare"></img>
+                    <img src={compare} alt="compare"></img>
                     <p className="mb-0">
                       Compare <br /> Products
                     </p>
