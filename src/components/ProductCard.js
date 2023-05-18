@@ -16,14 +16,14 @@ const ProductCard = (props) => {
     <>
       <div
         className={` ${
-          location.pathname == "/store" ? `gr-${grid}` : "col-3"
+          location.pathname === "/store" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link to="/product/:id" className="product-card position-relative">
           <div className="wishlish-icon position-absolute">
-            <Link>
+            <button className="border-0 bg-transparent">
               <img src={wish} alt="wishlist" />
-            </Link>
+            </button>
           </div>
           <div className="product-image">
             <img src={watch} className="img-fluid" alt="product card img" />
@@ -35,7 +35,7 @@ const ProductCard = (props) => {
             <ReactStars
               count={5}
               size={24}
-              value="3"
+              value={3}
               edit={false}
               activeColor="#ffd700"
             />
@@ -49,15 +49,15 @@ const ProductCard = (props) => {
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
-              <Link>
+              <button className="border-0 bg-transparent">
                 <img src={prodcompare} alt="compare" />
-              </Link>
-              <Link>
+              </button>
+              <button className="border-0 bg-transparent">
                 <img src={view} alt="view" />
-              </Link>
-              <Link>
+              </button>
+              <button className="border-0 bg-transparent">
                 <img src={addcart} alt="addcart" />
-              </Link>
+              </button>
             </div>
           </div>
         </Link>
