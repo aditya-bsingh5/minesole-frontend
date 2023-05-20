@@ -3,6 +3,7 @@ import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
+import CustomInput from "../components/CustomInput";
 
 const Signup = () => {
   return (
@@ -15,38 +16,18 @@ const Signup = () => {
             <div className="auth-card">
               <h3 className="text-center mb-3">Sign Up</h3>
               <form action="" className="d-flex flex-column gap-30">
-                <div>
-                  <input
-                    name="name"
-                    type="text"
-                    placeholder="Name"
-                    className="form-control"
-                  />
-                </div>
-                <div className="mt-1">
-                  <input
-                    name="email"
-                    type="text"
-                    placeholder="Email"
-                    className="form-control"
-                  />
-                </div>
-                <div className="mt-1">
-                  <input
-                    name="mobile"
-                    type="tel"
-                    placeholder="Mobile Number"
-                    className="form-control"
-                  />
-                </div>
-                <div className="mt-1">
-                  <input
-                    name="password"
-                    type="password"
-                    placeholder="Password"
-                    className="form-control"
-                  />
-                </div>
+                <CustomInput name="name" type="text" placeholder="Name" />
+                <CustomInput name="email" type="text" placeholder="Email" />
+                <CustomInput
+                  name="mobile"
+                  type="tel"
+                  placeholder="Mobile Number"
+                />
+                <CustomInput
+                  name="password"
+                  type="password"
+                  placeholder="Password"
+                />
                 <div>
                   <div className="tm-3 d-flex flex-column justify-content-center gap-15 align-items-center">
                     <button className="button border-0">Register</button>
