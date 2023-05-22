@@ -13,6 +13,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-12">
             <iframe
+              title="office-location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.9726840106464!2d72.9926362739438!3d19.064938582137337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c14ce47c9a5b%3A0x1f27c388cc78551f!2sVashi%20Infotech%20Park%2C%20Sector%2030%2C%20Vashi%2C%20Navi%20Mumbai%2C%20Maharashtra%20400703!5e0!3m2!1sen!2sin!4v1683561188059!5m2!1sen!2sin"
               width="600"
               height="450"

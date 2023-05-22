@@ -20,7 +20,7 @@ const Product = () => {
     // zoomPosition: "original",
     img: "https://cdn.fcglcdn.com/brainbees/images/products/zoom/13182798b.jpg",
   };
-  const [orderedProduct, setorderedProduct] = useState(true);
+  const [orderedProduct] = useState(true); //setorderedProduct
   const copyToClipboard = (text) => {
     console.log("text", text);
     var textField = document.createElement("textarea");
@@ -155,11 +155,11 @@ const Product = () => {
                 </div>
                 <div className="d-flex gap-15 align-items-center">
                   <div>
-                    <a href="">
+                    <a href="/">
                       <TbGitCompare className="fs-5 me-2" /> Add To Compare
                     </a>
                     <br />
-                    <a href="">
+                    <a href="/">
                       <TbHeartPlus className="fs-5 me-2" />
                       Add To Wishlist
                     </a>
@@ -190,7 +190,7 @@ const Product = () => {
                     <BsShare className="fs-5 me-2" />
                     Share Product Link:
                   </h3>
-                  <a
+                  <button
                     href="javascript:void(0)"
                     onClick={() => {
                       copyToClipboard(
@@ -199,7 +199,7 @@ const Product = () => {
                     }}
                   >
                     COPY TO CLIPBOARD
-                  </a>
+                  </button>
                 </div>
                 <div className="d-flex gap-10 flex-column my-3">
                   <h3 className="product-heading">
@@ -252,7 +252,7 @@ const Product = () => {
                 </div>
                 {orderedProduct && (
                   <div>
-                    <a className="text-dark text-decoration-underline" href="">
+                    <a className="text-dark text-decoration-underline" href="/">
                       {/* Write a Review */}
                     </a>
                   </div>
