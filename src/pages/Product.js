@@ -191,7 +191,7 @@ const Product = () => {
                     Share Product Link:
                   </h3>
                   <button
-                    href="javascript:void(0)"
+                    href=""
                     onClick={() => {
                       copyToClipboard(
                         "https://cdn.fcglcdn.com/brainbees/images/products/zoom/13182798b.jpg"
