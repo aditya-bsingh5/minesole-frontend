@@ -20,7 +20,7 @@ const Home = () => {
               />
               <div className="main-banner-content position-absolute">
                 <h4>Shoes for Kids</h4>
-                <h5>By the Chinese Kids</h5>
+                <h5>By the $$$$$$$$$$$</h5>
                 <p>Starting From ₹499</p>
                 <Link className="button"> BUY NOW</Link>
               </div>
@@ -36,7 +36,7 @@ const Home = () => {
                 />
                 <div className="small-banner-content position-absolute">
                   <h4>Best Sale</h4>
-                  <h5>By the Korean Kids</h5>
+                  <h5>By the $$$$$$$$$$$$</h5>
                   <p>Starting From ₹599</p>
                 </div>
               </div>
